@@ -1,0 +1,205 @@
+.publications {
+  background-color: #F5F5FA;
+}
+.publications__container {
+  padding: 30px;
+  flex-flow: row wrap;
+  row-gap: 30px;
+  column-gap: 30px;
+}
+@media (min-width: 768px) {
+  .publications__container {
+    padding: 60px 60px 30px;
+  }
+}
+@media (min-width: 1920px) {
+  .publications__container {
+    padding: 60px 160px 30px;
+    max-width: 1920px;
+    margin: 0 auto;
+  }
+}
+.publications__container_entry-page {
+  padding: 30px 30px 60px;
+}
+@media (min-width: 768px) {
+  .publications__container_entry-page {
+    padding: 30px 60px 60px;
+  }
+}
+@media (min-width: 1920px) {
+  .publications__container_entry-page {
+    padding: 30px 160px 60px;
+  }
+}
+.publications__container_service-page {
+  margin: 80px 0 0 0;
+}
+.publications__header {
+  flex: 0 1 100%;
+}
+.publications__title {
+  font: 700 1.875rem/2.285rem "Montserrat";
+  background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+  color: transparent;
+  -webkit-background-clip: text;
+  margin: 5px 0 0 0;
+}
+@media (min-width: 768px) {
+  .publications__title {
+    font: 700 2.375rem/2.895rem "Montserrat";
+  }
+}
+.publications__block {
+  display: flex;
+  flex-flow: column nowrap;
+  row-gap: 30px;
+  background-color: #ffffff;
+  border-radius: 8px;
+}
+@media (min-width: 768px) {
+  .publications__block {
+    flex: 1 1 47%;
+  }
+}
+@media (min-width: 1024px) {
+  .publications__block {
+    flex: 1 1 30%;
+  }
+  .publications__block:nth-of-type(4n) {
+    flex: 1 1 100%;
+  }
+}
+@media (min-width: 1024px) and (min-width: 1024px) {
+  .publications__block:nth-of-type(4n) {
+    flex: 1 1 30%;
+  }
+}
+.publications__img {
+  width: 100%;
+  height: 200px;
+}
+.publications__img_big {
+  width: 100%;
+  height: 300px;
+}
+@media (min-width: 768px) {
+  .publications__img_big {
+    height: 500px;
+  }
+}
+.publications__content {
+  flex-flow: row wrap;
+  row-gap: 15px;
+  padding: 0 30px 30px;
+  flex-grow: 1;
+}
+@media (min-width: 768px) {
+  .publications__content {
+    flex-flow: column nowrap;
+  }
+}
+.publications__content_no-img {
+  padding: 30px;
+}
+.publications__img img {
+  border-radius: 8px 8px 0px 0px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.publications__img_big img {
+  border-radius: 12px;
+}
+.publications__heading {
+  color: #24A3FF;
+  flex: 0 1 auto;
+}
+.publications__heading:hover, .publications__heading:focus {
+  color: #0085FF;
+}
+.publications__date {
+  font: 700 0.75rem/0.914rem "Montserrat";
+  letter-spacing: 1px;
+  color: #B3B3BA;
+  text-transform: uppercase;
+  flex: 0 1 auto;
+  width: 100%;
+}
+.publications__text {
+  font: 400 0.875rem/1.375rem "Montserrat";
+  position: relative;
+  padding: 15px 0 0 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+}
+.publications__text:before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 4px;
+  top: 0;
+  left: 0;
+  background-color: #E6E6F0;
+}
+.publications__toggler {
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  flex: 0 1 100%;
+}
+.publications__toggler-container {
+  max-width: 250px;
+  height: 42px;
+  background-color: #E6E6F0;
+  border-radius: 12px;
+  padding: 2px;
+  column-gap: 2px;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.publications__button {
+  padding: 8px 30px 10px;
+  border-radius: 10px;
+  font: 700 1rem/1.25rem "Montserrat";
+}
+.publications__button:hover {
+  background-color: #F5F5FA;
+}
+.publications__button__button a {
+  color: #323264;
+}
+.publications__articles, .publications__news, .publications__more {
+  display: none;
+}
+.publications__button.active {
+  background-color: #ffffff;
+}
+.publications__news.active, .publications__articles.active, .publications__more.active {
+  display: flex;
+  flex-flow: row wrap;
+  row-gap: 30px;
+  background-color: #F5F5FA;
+  column-gap: 30px;
+}
+.publications__more {
+  display: none;
+}
+.publications__button-less {
+  display: none;
+}
+.publications__button-less.active, .publications__button-more {
+  display: flex;
+  flex: 0 1 100%;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.publications__button-more.inactive {
+  display: none;
+}

@@ -1,0 +1,153 @@
+@import "variables"
+
+.publications
+  background-color: $GreyBgColor
+  &__container
+    padding: 30px
+    flex-flow: row wrap
+    row-gap: 30px
+    column-gap: 30px
+    @media (min-width: 768px)
+      padding: 60px 60px 30px
+    @media (min-width: 1920px)
+      padding: 60px 160px 30px
+      max-width: 1920px
+      margin: 0 auto
+  &__container_entry-page
+    padding: 30px 30px 60px
+    @media (min-width: 768px)
+      padding: 30px 60px 60px
+    @media (min-width: 1920px)
+      padding: 30px 160px 60px
+
+  &__container_service-page
+    margin: 80px 0 0 0
+  &__header
+    flex: 0 1 100%
+  &__title
+    @include GradientHeadings
+    margin: 5px 0 0 0
+  &__block
+    display: flex
+    flex-flow: column nowrap
+    row-gap: 30px
+    background-color: $WhiteColor
+    border-radius: 8px
+    @media (min-width: 768px)
+      flex: 1 1 47%
+    @media (min-width: 1024px)
+      flex: 1 1 30%
+      &:nth-of-type(4n)
+        flex: 1 1 100%
+        @media (min-width: 1024px)
+          flex: 1 1 30%
+  &__img
+    width: 100%
+    height: 200px
+  &__img_big
+    width: 100%
+    height: 300px
+    @media (min-width: 768px)
+      height: 500px
+  &__content
+    flex-flow: row wrap
+    row-gap: 15px
+    padding: 0 30px 30px
+    flex-grow: 1
+    @media (min-width: 768px)
+      flex-flow: column nowrap
+    &_no-img
+      padding: 30px
+
+  &__img img
+    border-radius: 8px 8px 0px 0px
+    width: 100%
+    height: 100%
+    object-fit: cover
+  &__img_big img
+    border-radius: 12px
+  &__heading
+    color: $BlueRegColor
+    flex: 0 1 auto
+  &__heading:hover,
+  &__heading:focus
+    color: $BlueHoverColor
+  &__date
+    font: 700 0.75rem/0.914rem 'Montserrat'
+    letter-spacing: 1px
+    color: $GreyTextColor
+    text-transform: uppercase
+    flex: 0 1 auto
+    width: 100%
+  &__text
+    @include paragraph-small
+    position: relative
+    padding: 15px 0 0 0
+    overflow: hidden
+    text-overflow: ellipsis
+    display: -webkit-box
+    -webkit-line-clamp: 5
+    -webkit-box-orient: vertical
+    @media (min-width: 768px)
+
+  &__text:before
+    content: ''
+    position: absolute
+    display: block
+    width: 100%
+    height: 4px
+    top: 0
+    left: 0
+    background-color: $GreySepColor
+  &__toggler
+    flex-flow: row nowrap
+    justify-content: center
+    align-items: center
+    flex: 0 1 100%
+    &-container
+      max-width: 250px
+      height: 42px
+      background-color: $GreySepColor
+      border-radius: 12px
+      padding: 2px
+      column-gap: 2px
+      flex-flow: row nowrap
+      justify-content: center
+      align-items: center
+  &__button
+    padding: 8px 30px 10px
+    border-radius: 10px
+    font: 700 1rem/1.25rem "Montserrat"
+    &:hover
+      background-color: $GreyBgColor
+    &__button a
+      color: $IndigoMainColor
+
+  &__articles, &__news, &__more
+    display: none
+
+  &__button.active
+    background-color: $WhiteColor
+  &__news.active , &__articles.active, &__more.active
+    display: flex
+    flex-flow: row wrap
+    row-gap: 30px
+    background-color: $GreyBgColor
+    column-gap: 30px
+    //@media (min-width: 768px)
+    //  padding: 60px 60px 30px
+    //@media (min-width: 1920px)
+    //  padding: 60px 160px 30px
+  &__more
+    display: none
+  &__button-less
+    display: none
+  &__button-less.active, &__button-more
+    display: flex
+    flex: 0 1 100%
+    flex-flow: row nowrap
+    justify-content: center
+    align-items: center
+  &__button-more.inactive
+    display: none
+

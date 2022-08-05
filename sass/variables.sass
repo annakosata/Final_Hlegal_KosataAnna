@@ -1,0 +1,84 @@
+$IndigoMainColor: #323264
+$IndigoMediumColor: #46466E
+$IndigoLightColor: #686887
+
+$PinkAccentColor: #F0145A
+$NegativeColor: #EC6F5D
+
+$BlueRegColor: #24A3FF
+$BlueHoverColor: #0085FF
+$BlueActiveColor: #006CCF
+
+$GreyBgColor: #F5F5FA
+$GreyBgAltColor: #EDEDF7
+$GreyTextColor: #B3B3BA
+$GreySepColor: #E6E6F0
+
+$WhiteColor: #ffffff
+$BlackColor: #000000
+
+@mixin GradientBase
+ background: linear-gradient(128.63deg, #323264 0%, #323264 73.96%, #A54B5F 100%)
+@mixin GradientSoft
+  background: linear-gradient(42.01deg, #323264 14.33%, #323264 51.39%, #7A425E 87.53%)
+@mixin GradientRed
+  background: linear-gradient(323.35deg, #F0145A 6.7%, #693264 70.36%)
+@mixin GradientSuperSoft
+  background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%)
+@mixin GradientRedText
+  background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%)
+
+@mixin tab-items
+  font: 700 1.875rem/2.285rem 'Montserrat'
+  color: $GreyTextColor
+  &:hover,
+  &:focus
+    color: $PinkAccentColor
+  @media (min-width: 768px)
+    font: 700 2.375rem/2.895rem 'Montserrat'
+@mixin h3caps
+  font: 700 0.875rem/1.066rem 'Montserrat'
+  letter-spacing: 1px
+  text-transform: uppercase
+@mixin GradientHeadings
+  font: 700 1.875rem/2.285rem 'Montserrat'
+  @include GradientRedText
+  color: transparent
+  -webkit-background-clip: text
+  @media (min-width: 768px)
+    font: 700 2.375rem/2.895rem 'Montserrat'
+@mixin paragraph-small
+  font: 400 0.875rem/1.375rem 'Montserrat'
+
+@mixin link
+  font-size: 1rem
+  line-height: 1.25rem
+  color: $BlueRegColor
+  transition: all ease-in-out 0.2s
+  &:hover
+    color: $PinkAccentColor
+@mixin tt
+  transition: all ease-in-out 0.2s
+@mixin phone
+  font: 700 1rem/1.25rem "Montserrat"
+@mixin page
+  font: 400 1.25rem/1.52rem "Montserrat"
+  @media (min-width: 768px)
+    font: 400 2.25rem/2.7425rem "Montserrat"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

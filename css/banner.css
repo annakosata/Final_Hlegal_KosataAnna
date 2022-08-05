@@ -1,0 +1,42 @@
+.banner__content {
+  position: relative;
+  background: url("../img/h_letter.png") 50% 0/auto 100vh no-repeat;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+.banner__content h1 {
+  text-align: center;
+  color: #ffffff;
+}
+.banner__content a {
+  position: absolute;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  bottom: 30px;
+}
+.banner__content a::before, .banner__content a::after {
+  content: "";
+  position: absolute;
+  width: 13px;
+  height: 2px;
+  bottom: 45%;
+  background-color: #ffffff;
+}
+.banner__content a::before {
+  left: 23%;
+  transform: rotate(45deg);
+}
+.banner__content a::after {
+  right: 23%;
+  transform: rotate(-45deg);
+}
+.banner__content a:hover, .banner__content a:focus {
+  border: 1px solid rgba(240, 20, 90, 0.5);
+}
+.banner__content a:hover:before, .banner__content a:hover:after, .banner__content a:focus:before, .banner__content a:focus:after {
+  background-color: #F0145A;
+}

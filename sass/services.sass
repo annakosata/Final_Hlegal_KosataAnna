@@ -1,0 +1,288 @@
+@import "variables"
+
+.services
+  @include GradientSuperSoft
+  border-radius: 0px 0px 12px 12px
+  &__container
+  &__container_service-page
+    justify-content: center
+    padding: 120px 0 0 0
+    @media (min-width: 768px)
+      padding: 230px 0 0 0
+    @media (min-width: 1024px)
+      padding: 120px 0 0 0
+  &__banner
+    position: relative
+    background: url("../img/h_letter.png") 50% 0/auto 100vh no-repeat
+    height: 100vh
+    align-items: center
+    justify-content: center
+    padding: 30px
+  &__banner h1
+    text-align: center
+    color: $WhiteColor
+    margin: 30px 0
+  &__banner a
+    position: absolute
+    border: 1px solid rgba(255,255,255,0.5)
+    border-radius: 50%
+    width: 42px
+    height: 42px
+    bottom: 30px
+  &__banner a::before,
+  &__banner a::after
+    content: ''
+    position: absolute
+    width: 13px
+    height: 2px
+    bottom: 45%
+    background-color: $WhiteColor
+  &__banner a::before
+    left: 23%
+    transform: rotate(45deg)
+  &__banner a::after
+    right: 23%
+    transform: rotate(-45deg)
+  &__banner a:hover,
+  &__banner a:focus
+    border: 1px solid rgba(240, 20, 90,0.5)
+  &__banner a:hover:before,
+  &__banner a:hover:after,
+  &__banner a:focus:before,
+  &__banner a:focus:after
+    background-color: $PinkAccentColor
+  &__info
+  &__info-container
+    display: flex
+    flex-flow: column nowrap
+    row-gap: 30px
+    padding: 30px 30px 60px
+    @media (min-width: 768px)
+      row-gap: 60px
+      padding: 60px
+    @media (min-width: 1920px)
+      padding: 60px 160px
+      max-width: 1920px
+      margin: 0 auto
+  //&__info_entry-page
+  //  @media (min-width: 768px)
+  //    padding: 30px 60px 60px
+  //  @media (min-width: 1440px)
+  //    padding: 30px 280px 60px
+  &__tab
+    flex-flow: column
+    row-gap: 30px
+    @media (min-width: 768px)
+      row-gap: 60px
+    @media (min-width: 1024px)
+      flex-flow: row nowrap
+      column-gap: 60px
+    @media (min-width: 1440px)
+      justify-content: center
+      align-items: center
+  &__tab-items
+    flex-flow: row nowrap
+    column-gap: 30px
+    overflow-x: scroll
+    padding: 0 0 30px 0
+    margin: 0 -100px 0 0
+    @media (min-width: 768px)
+      padding: 0 0 60px 0
+    @media (min-width: 1024px)
+      flex-flow: row wrap
+      flex: 0 0 49%
+      padding: 0 60px 0 0
+      margin: 0
+      overflow-x: visible
+      overflow-y: scroll
+      align-items: center
+      row-gap: 30px
+    @media (min-width: 1440px)
+      flex: 0 0 35%
+    @media (min-width: 1920px)
+      flex: 0 0 30%
+
+  &__tab-items::-webkit-scrollbar
+    height: 4px
+    background-color: rgba(255, 255, 255, 0.3)
+    @media (min-width: 1024px)
+      height: auto
+      width: 4px
+  &__tab-items a
+    @include tab-items
+    white-space: nowrap
+    @media (min-width: 1024px)
+      text-align: end
+
+  &__tab-item
+    width: 100%
+  &__tab-item_active
+    background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%)
+    color: transparent!important
+    -webkit-background-clip: text
+  &__tab-body
+    @media (min-width: 1024px)
+      flex: 1 1 auto
+      align-items: center
+      @media (min-width: 1440px)
+        flex: 0 1 44%
+      @media (min-width: 1920px)
+        flex: 0 1 55%
+
+
+  &__tab-block
+    display: none
+  &__tab-block_show
+    display: flex
+    flex-flow: column nowrap
+    row-gap: 30px
+  &__tab-body h2,
+  &__tab-body span
+    color: $WhiteColor
+  &__tab-block span
+    font: 400 1.1875rem/1.875rem 'Montserrat'
+    display: block
+  &__best-at
+    flex-flow: row wrap
+    row-gap: 30px
+    @media (min-width: 768px)
+      row-gap: 60px
+  &__header
+    flex-flow: column nowrap
+    row-gap: 10px
+  &__title
+    @include GradientHeadings
+  &__name
+    color: $BlueRegColor
+    margin: 30px 0 15px
+    &:hover
+      color: $PinkAccentColor
+  &__description
+    color: $WhiteColor
+  &__block-wrapper
+    flex-flow: row wrap
+    row-gap: 30px
+    @media (min-width: 768px)
+      row-gap: 60px
+      justify-content: space-between
+    @media (min-width: 1024px)
+      column-gap: 60px
+  &__block-wrapper-entry
+    @media (min-width: 1440px)
+      flex: 0 1 80%
+    @media (min-width: 1920px)
+      flex: 0 1 70%
+  &__block
+    flex: 0 1 100%
+    @media (min-width: 768px)
+      flex: 0 1 45%
+    @media (min-width: 1024px)
+      flex: 1 1 28%
+  &__block_entry-page
+    display: flex
+    flex-flow: row wrap
+    row-gap: 30px
+    flex: 0 1 100%
+  &__block-header
+    display: flex
+    position: relative
+    flex-flow: column nowrap
+    row-gap: 30px
+    justify-content: center
+    text-align: center
+    align-items: center
+    padding: 0 0 34px 0
+    @media (min-width: 768px)
+      padding: 0 0 64px 0
+  &__block-header:after
+    content: ''
+    position: absolute
+    display: block
+    width: 100%
+    height: 4px
+    bottom: 0
+    left: 0
+    background-color: rgba(255, 255, 255, 0.5)
+  &__block-list
+    color: $WhiteColor
+    flex-flow: row wrap
+    row-gap: 30px
+  &__block-list h3
+    flex: 0 0 100%
+  &__block-list ul
+    font: 400 1.125rem/1.625rem 'Montserrat'
+    list-style-type: disc
+    display: flex
+    flex-flow: row wrap
+    row-gap: 15px
+    @media (min-width: 768px)
+      max-height: 500px
+      flex-flow: column wrap
+      column-gap: 60px
+      flex: 0 1 45%
+    @media (min-width: 1024px)
+      max-height: 370px
+    @media (min-width: 1440px)
+      max-height: 360px
+    @media (min-width: 1920px)
+      max-height: 310px
+  &__block-list ul li
+    margin: 0 0 0 20px
+  &__block-list ul li::marker
+    color: $PinkAccentColor
+  &__block-img
+    width: 92px
+    height: 92px
+    background-color: $WhiteColor
+    border-radius: 24px
+    display: flex
+    justify-content: center
+    align-items: center
+  &__description
+    display: flex
+    flex-flow: row wrap
+    row-gap: 20px
+  &__shadow
+    position: relative
+  &__shadow:before,
+  &__shadow:after
+    content: ''
+    position: absolute
+    height: 10px
+    border-radius: 0 0 12px 12px
+  &__shadow:before
+    width: 90%
+    background-color: #CACADB
+    top: 0
+    left: 4%
+  &__shadow:after
+    width: 80%
+    background-color: #E7E7F2
+    bottom: -20px
+    left: 9%
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,165 @@
+.team-entry__container {
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 30px 30px 60px;
+  row-gap: 30px;
+}
+@media (min-width: 768px) {
+  .team-entry__container {
+    column-gap: 30px;
+    flex-flow: row wrap;
+    align-items: center;
+    padding: 0 60px 60px;
+    row-gap: 60px;
+  }
+}
+@media (min-width: 1024px) {
+  .team-entry__container {
+    row-gap: 30px;
+    column-gap: 60px;
+    flex-flow: column wrap;
+    height: 730px;
+  }
+}
+@media (min-width: 1440px) {
+  .team-entry__container {
+    padding: 0 180px 60px;
+    align-items: flex-start;
+    height: 650px;
+  }
+}
+@media (min-width: 1920px) {
+  .team-entry__container {
+    max-width: 1920px;
+    padding: 30px 280px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 768px) {
+  .team-entry__member-photo {
+    flex: 0 0 46%;
+  }
+}
+@media (min-width: 1024px) {
+  .team-entry__member-photo {
+    flex: 0 0 100%;
+  }
+}
+@media (min-width: 1024px) {
+  .team-entry__member-photo {
+    width: 33%;
+  }
+}
+@media (min-width: 1440px) {
+  .team-entry__member-photo {
+    width: 37%;
+  }
+}
+.team-entry__member-photo-container {
+  width: 100%;
+  height: 375px;
+}
+@media (min-width: 1440px) {
+  .team-entry__member-photo-container {
+    height: 500px;
+  }
+}
+.team-entry__member-photo-container img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+}
+.team-entry__member-name {
+  font: 700 2.375rem/2.895rem "Montserrat";
+  background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+  color: transparent;
+  -webkit-background-clip: text;
+}
+.team-entry__member-email a, .team-entry__member-linked a {
+  color: #24A3FF;
+  font: 400 1rem/1.218rem "Montserrat";
+}
+.team-entry__member-email a:hover, .team-entry__member-email a:focus, .team-entry__member-linked a:hover, .team-entry__member-linked a:focus {
+  color: #0085FF;
+}
+.team-entry__member-email {
+  position: relative;
+}
+.team-entry__member-email:before, .team-entry__member-email:after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background-color: #E6E6F0;
+  border-radius: 50%;
+  top: 38%;
+  display: none;
+}
+@media (min-width: 1440px) {
+  .team-entry__member-email:before, .team-entry__member-email:after {
+    display: block;
+  }
+}
+.team-entry__member-email:before {
+  left: -16px;
+}
+.team-entry__member-email:after {
+  right: -16px;
+}
+.team-entry__member-header {
+  display: flex;
+  flex-flow: column nowrap;
+  row-gap: 15px;
+  margin-bottom: 30px;
+}
+@media (min-width: 768px) {
+  .team-entry__member-header {
+    flex: 0 1 49%;
+  }
+}
+@media (min-width: 1024px) {
+  .team-entry__member-header {
+    flex: 0 1 auto;
+    width: 100%;
+  }
+}
+@media (min-width: 1440px) {
+  .team-entry__member-header {
+    width: 63%;
+  }
+}
+.team-entry__member-info {
+  display: flex;
+  flex-flow: row wrap;
+  row-gap: 10px;
+}
+@media (min-width: 1440px) {
+  .team-entry__member-info {
+    align-items: baseline;
+    column-gap: 26px;
+  }
+}
+.team-entry__member-info > * {
+  flex: 0 0 100%;
+}
+@media (min-width: 1440px) {
+  .team-entry__member-info > * {
+    flex: 0 1 auto;
+  }
+}
+.team-entry__resume-container {
+  display: flex;
+  flex-flow: row wrap;
+  row-gap: 30px;
+}
+@media (min-width: 1024px) {
+  .team-entry__resume-container {
+    width: 60%;
+  }
+}
+.team-entry__resume-block h3 {
+  font: 700 0.875rem/1.066rem "Montserrat";
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}

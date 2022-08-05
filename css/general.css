@@ -1,0 +1,178 @@
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+
+input, button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+button:hover, a:hover {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+ol {
+  list-style-type: none;
+  counter-reset: my-counter;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+p {
+  margin: 0;
+  font: 400 1rem/1.625rem "Montserrat";
+}
+
+body {
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 100%;
+  position: relative;
+}
+@media (min-width: 1920px) {
+  .container {
+    margin: 0 auto;
+  }
+}
+
+.d-flex {
+  display: flex;
+}
+
+.tt {
+  text-transform: uppercase;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+h1 {
+  font: 700 2.375rem/2.895rem "Montserrat";
+}
+
+h2 {
+  font: 700 1.25rem/1.523rem "Montserrat";
+}
+@media (min-width: 768px) {
+  h2 {
+    font: 700 1.875rem/2.285rem "Montserrat";
+  }
+}
+
+h3 {
+  font: 700 1rem/1.21rem "Montserrat";
+}
+@media (min-width: 768px) {
+  h3 {
+    font: 700 1.375rem/1.677rem "Montserrat";
+  }
+}
+
+h4 {
+  font: 700 1rem/1.218rem "Montserrat";
+}
+
+.link-to-page a {
+  font: 700 0.875rem/1.066rem "Montserrat";
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #24A3FF;
+  position: relative;
+}
+.link-to-page a:hover > *, .link-to-page a:focus > * {
+  color: #F0145A;
+  stroke: #F0145A;
+}
+
+.link-to-page a svg {
+  stroke: #24A3FF;
+  width: 8px;
+  height: 11px;
+}
+
+#current-page a {
+  color: #F0145A;
+}
+
+#current-page:after {
+  background-color: #F0145A;
+}
+
+.button {
+  display: block;
+  padding: 18px 30px;
+  background-color: #24A3FF;
+  box-shadow: 0 0 20px rgba(36, 163, 255, 0.5);
+  border-radius: 12px;
+  border: none;
+  color: #ffffff;
+  font: 700 1rem/1.25rem "Montserrat";
+}
+.button:hover, .button:focus {
+  background-color: #0085FF;
+}
+.button:active {
+  background-color: #006CCF;
+}
+
+.button-grey {
+  background-color: #E6E6F0;
+  color: #323264;
+  box-shadow: none;
+}
+.button-grey:hover, .button-grey:focus {
+  background-color: #ffffff;
+}
+
+body.active {
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+.underlined {
+  position: relative;
+}
+.underlined:before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  top: -30px;
+  left: 0;
+  background-color: #E6E6F0;
+}
+
+.paragraphs {
+  display: flex;
+  flex-flow: column nowrap;
+  row-gap: 15px;
+}
+.paragraphs h3 {
+  color: #323264;
+}

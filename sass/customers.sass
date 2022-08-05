@@ -1,0 +1,78 @@
+@import "variables"
+
+.customers
+  &__container
+    flex-flow: row wrap
+    row-gap: 30px
+    justify-content: center
+    padding: 60px 0 0 0
+    @media (min-width: 1920px)
+      padding: 60px 100px
+      max-width: 1920px
+      margin: 0 auto
+  //&__container_child-page
+  //  padding: 80px 0 0 0
+  &__title
+    @include h3caps
+    color: $IndigoMainColor
+    text-align: center
+  &__logo-container
+    display: flex
+    flex-flow: row wrap
+  &__logo
+    flex: 0 1 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    height: 120px
+    @media (min-width: 768px)
+      flex: 0 1 33.3333333%
+    @media (min-width: 1024px)
+      flex: 0 1 25%
+  &__logo:nth-of-type(1)
+    background: #1C4280
+    @media (min-width: 1920px)
+      border-radius: 8px 0 0 0
+  &__logo:nth-of-type(2)
+    background: #143646
+  &__logo:nth-of-type(3)
+    background: linear-gradient(0deg, #F48B30, #F48B30), #F48B30
+  &__logo:nth-of-type(4)
+    background: #9E4DC3
+    @media (min-width: 1920px)
+      border-radius: 0 8px 0 0
+  &__logo:nth-of-type(5)
+    background: #FD9339
+  &__logo:nth-of-type(6)
+    background: #E2E2E4
+  &__logo:nth-of-type(7)
+    background: #C71C36
+  &__logo:nth-of-type(8)
+    background: #DCF3F9
+  &__logo:nth-of-type(9)
+    background: #EAEAEA
+    @media (min-width: 1920px)
+      border-radius: 0 0 0 8px
+  &__logo:nth-of-type(10)
+    background: #282240
+  &__logo:nth-of-type(11)
+    background: #1D4568
+  &__logo:nth-of-type(12)
+    background: #000000
+    @media (min-width: 1920px)
+      border-radius: 0 0 8px 0
+
+  &__logo:nth-of-type(n+7)
+    display: none
+    @media (min-width: 768px)
+      display: flex
+  &__logo-img-wrap
+    max-width: 220px
+    max-height: 50px
+    @media (min-width: 768px)
+      max-width: 220px
+      max-height: 95px
+
+
+
+

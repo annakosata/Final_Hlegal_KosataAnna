@@ -1,0 +1,119 @@
+@import "variables"
+*
+  box-sizing: border-box
+  outline: none
+input, button
+  -webkit-appearance: none
+  -moz-appearance: none
+  appearance: none
+button:hover , a:hover
+  cursor: pointer
+a
+  text-decoration: none
+  outline: none
+ul
+  padding: 0
+  margin: 0
+  list-style: none
+ol
+  list-style-type: none
+  counter-reset: my-counter
+img
+  max-width: 100%
+  height: auto
+  display: block
+p
+  margin: 0
+  font: 400 1rem/1.625rem 'Montserrat'
+body
+  font-family: 'Montserrat'
+  font-size: 16px
+  font-weight: 400
+  font-style: normal
+  overflow-x: hidden
+.container
+  width: 100%
+  position: relative
+  @media (min-width: 1920px)
+    margin: 0 auto
+.d-flex
+  display: flex
+.tt
+  text-transform: uppercase
+h1,h2,h3,h4,h5,h6
+  margin: 0
+h1
+  font: 700 2.375rem/2.895rem 'Montserrat'
+h2
+  font: 700 1.25rem/1.523rem 'Montserrat'
+  @media (min-width: 768px)
+    font: 700 1.875rem/2.285rem 'Montserrat'
+h3
+  font: 700 1rem/1.21rem 'Montserrat'
+  @media (min-width: 768px)
+    font: 700 1.375rem/1.677rem 'Montserrat'
+h4
+  font: 700 1rem/1.218rem 'Montserrat'
+.link-to-page a
+  @include h3caps
+  letter-spacing: 1px
+  color: $BlueRegColor
+  position: relative
+  &:hover>*,
+  &:focus>*
+    color: $PinkAccentColor
+    stroke: $PinkAccentColor
+.link-to-page a svg
+  stroke: $BlueRegColor
+  width: 8px
+  height: 11px
+#current-page a
+  color: $PinkAccentColor
+#current-page:after
+  background-color: $PinkAccentColor
+
+.button
+  display: block
+  padding: 18px 30px
+  background-color: $BlueRegColor
+  box-shadow: 0 0 20px rgba(36, 163, 255, 0.5)
+  border-radius: 12px
+  border: none
+  color: $WhiteColor
+  font: 700 1rem/1.25rem 'Montserrat'
+  &:hover, &:focus
+    background-color: $BlueHoverColor
+  &:active
+    background-color: $BlueActiveColor
+.button-grey
+  background-color: $GreySepColor
+  color: $IndigoMainColor
+  box-shadow: none
+  &:hover, &:focus
+    background-color: $WhiteColor
+
+body.active
+  height: 100vh
+  overflow-y: hidden
+.underlined
+  position: relative
+  &:before
+    content: ''
+    position: absolute
+    display: block
+    width: 100%
+    height: 2px
+    top: -30px
+    left: 0
+    background-color: $GreySepColor
+.paragraphs
+  display: flex
+  flex-flow: column nowrap
+  row-gap: 15px
+  & h3
+    color: $IndigoMainColor
+
+
+
+
+

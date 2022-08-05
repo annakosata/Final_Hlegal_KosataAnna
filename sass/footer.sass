@@ -1,0 +1,126 @@
+@import "variables"
+
+.footer
+  background-color: $GreyBgColor
+  &__container
+    margin: 0 auto
+    padding: 30px
+    @media (min-width: 768px)
+      padding: 30px 60px
+    @media (min-width: 1920px)
+      max-width: 1920px
+      padding: 30px 160px
+  &__container-underline
+    display: flex
+    flex-wrap: wrap
+    column-gap: 30px
+    row-gap: 21px
+    @media (min-width: 768px)
+      justify-content: space-between
+
+
+  &__container-underline >*
+    width: 100%
+    @media (min-width: 768px)
+      width: auto
+  &__location
+    flex-flow: column nowrap
+    align-items: center
+    row-gap: 10px
+    column-gap: 26px
+    @media (min-width: 768px)
+      flex-flow: row nowrap
+        flex: 1 1 50%
+  &__address
+    position: relative
+  &__address:after
+    content: ''
+    position: absolute
+    width: 6px
+    height: 6px
+    background-color: $GreyTextColor
+    border-radius: 50%
+    top: 38%
+    right: -15px
+    display: none
+    @media (min-width: 768px)
+      display: block
+  &__address span
+    font: 400 1rem/1.218rem 'Montserrat'
+    color: $IndigoMainColor
+  &__map a
+    font: 700 0.75rem/0.914rem 'Montserrat'
+    color: $BlueRegColor
+    letter-spacing: 1px
+    &:hover, &:focus
+      color: $BlueHoverColor
+    &:active
+      color: $BlueActiveColor
+
+  &__contacts
+    flex-flow: column nowrap
+    align-items: center
+    row-gap: 10px
+    column-gap: 26px
+    margin: 0 0 9px
+    @media (min-width: 768px)
+      flex-flow: row nowrap
+      order: 1
+      margin: 0
+      flex: 1 0 100%
+  &__tel
+    position: relative
+  &__tel:before,
+  &__tel:after
+    content: ''
+    position: absolute
+    width: 6px
+    height: 6px
+    background-color: $GreyTextColor
+    border-radius: 50%
+    top: 38%
+    display: none
+    @media (min-width: 768px)
+      display: block
+  &__tel:before
+    left: -15px
+  &__tel:after
+    right: -15px
+
+  &__tel a, &__mail a
+    @include phone
+  &__tel a
+    color: $IndigoMediumColor
+    &:hover, &:focus
+      color: $IndigoLightColor
+  &__mail a
+    color: $BlueRegColor
+    &:hover, &:focus
+      color: $PinkAccentColor
+  &__socials
+    width: 100%
+    text-align: center
+    @media (min-width: 768px)
+      width: auto
+  &__socials svg
+    width: 38px
+    height: 38px
+    fill: $BlueRegColor
+    &:hover, &:focus
+      fill: $PinkAccentColor
+  &__copyright
+    text-align: center
+    justify-content: center
+    font: 400 1rem/1.25rem "Montserrat"
+    color: $GreyTextColor
+    @media (min-width: 1024px)
+      flex: 0 0 50%
+      justify-content: flex-end
+
+
+
+
+
+
+
+

@@ -1,0 +1,115 @@
+.customers__container {
+  flex-flow: row wrap;
+  row-gap: 30px;
+  justify-content: center;
+  padding: 60px 0 0 0;
+}
+@media (min-width: 1920px) {
+  .customers__container {
+    padding: 60px 100px;
+    max-width: 1920px;
+    margin: 0 auto;
+  }
+}
+.customers__title {
+  font: 700 0.875rem/1.066rem "Montserrat";
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #323264;
+  text-align: center;
+}
+.customers__logo-container {
+  display: flex;
+  flex-flow: row wrap;
+}
+.customers__logo {
+  flex: 0 1 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+}
+@media (min-width: 768px) {
+  .customers__logo {
+    flex: 0 1 33.3333333%;
+  }
+}
+@media (min-width: 1024px) {
+  .customers__logo {
+    flex: 0 1 25%;
+  }
+}
+.customers__logo:nth-of-type(1) {
+  background: #1C4280;
+}
+@media (min-width: 1920px) {
+  .customers__logo:nth-of-type(1) {
+    border-radius: 8px 0 0 0;
+  }
+}
+.customers__logo:nth-of-type(2) {
+  background: #143646;
+}
+.customers__logo:nth-of-type(3) {
+  background: linear-gradient(0deg, #F48B30, #F48B30), #F48B30;
+}
+.customers__logo:nth-of-type(4) {
+  background: #9E4DC3;
+}
+@media (min-width: 1920px) {
+  .customers__logo:nth-of-type(4) {
+    border-radius: 0 8px 0 0;
+  }
+}
+.customers__logo:nth-of-type(5) {
+  background: #FD9339;
+}
+.customers__logo:nth-of-type(6) {
+  background: #E2E2E4;
+}
+.customers__logo:nth-of-type(7) {
+  background: #C71C36;
+}
+.customers__logo:nth-of-type(8) {
+  background: #DCF3F9;
+}
+.customers__logo:nth-of-type(9) {
+  background: #EAEAEA;
+}
+@media (min-width: 1920px) {
+  .customers__logo:nth-of-type(9) {
+    border-radius: 0 0 0 8px;
+  }
+}
+.customers__logo:nth-of-type(10) {
+  background: #282240;
+}
+.customers__logo:nth-of-type(11) {
+  background: #1D4568;
+}
+.customers__logo:nth-of-type(12) {
+  background: #000000;
+}
+@media (min-width: 1920px) {
+  .customers__logo:nth-of-type(12) {
+    border-radius: 0 0 8px 0;
+  }
+}
+.customers__logo:nth-of-type(n+7) {
+  display: none;
+}
+@media (min-width: 768px) {
+  .customers__logo:nth-of-type(n+7) {
+    display: flex;
+  }
+}
+.customers__logo-img-wrap {
+  max-width: 220px;
+  max-height: 50px;
+}
+@media (min-width: 768px) {
+  .customers__logo-img-wrap {
+    max-width: 220px;
+    max-height: 95px;
+  }
+}
