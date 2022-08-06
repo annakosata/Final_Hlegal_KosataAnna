@@ -2,7 +2,7 @@
   display: flex;
   flex-flow: row wrap;
   row-gap: 30px;
-  padding: 30px 0;
+  padding: 30px 0 0;
 }
 @media (min-width: 768px) {
   .about-us__container {
@@ -12,6 +12,7 @@
 }
 .about-us__block-wrapper {
   padding: 0 30px;
+  width: 100%;
 }
 @media (min-width: 768px) {
   .about-us__block-wrapper {
@@ -82,6 +83,62 @@
   .about-us__aside {
     flex: 0 0 29%;
   }
+}
+.about-us__achievements {
+  background-color: #F5F5FA;
+  width: 100%;
+}
+.about-us__achievements-wrapper {
+  width: 100%;
+  padding: 30px 60px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  row-gap: 30px;
+}
+@media (min-width: 1920px) {
+  .about-us__achievements-wrapper {
+    padding: 30px 160px;
+    max-width: 1920px;
+    margin: 0 auto;
+  }
+}
+.about-us__achievements-wrapper h3 {
+  font: 700 0.875rem/1.066rem "Montserrat";
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #323264;
+}
+.about-us__achievements-container {
+  width: 100%;
+}
+.about-us__achievements-slide {
+  width: 100%;
+  height: 90px !important;
+  display: flex;
+  background: #ffffff;
+  border-radius: 12px;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 1024px) {
+  .about-us__achievements-slide {
+    height: 110px !important;
+  }
+}
+.about-us__achievements-item {
+  max-width: 100%;
+  height: 40px;
+}
+@media (min-width: 1024px) {
+  .about-us__achievements-item {
+    height: 60px !important;
+  }
+}
+.about-us__achievements-item img {
+  width: auto;
+  height: 100%;
 }
 .about-us__banner {
   width: 100%;

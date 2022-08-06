@@ -188,8 +188,43 @@
                     </div>
                 </div>
             </div>
-            <div class="about-us__block-wrapper">
-                <div class="about-us__achievements"></div>
+            <div class="about-us__achievements">
+                <div class="about-us__achievements-wrapper">
+                    <h3>achievements</h3>
+                    <div class="about-us__achievements-container swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide about-us__achievements-slide">
+                                <a href="#">
+                                    <div class="about-us__achievements-item">
+                                        <img src="../img/about_us/achievement/Achievment-1.png" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide about-us__achievements-slide">
+                                <a href="#">
+                                    <div class="about-us__achievements-item">
+                                        <img src="../img/about_us/achievement/Achievment-2.png" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide about-us__achievements-slide">
+                                <a href="#">
+                                    <div class="about-us__achievements-item">
+                                        <img src="../img/about_us/achievement/Achievment-3.png" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide about-us__achievements-slide">
+                                <a href="#">
+                                    <div class="about-us__achievements-item">
+                                        <img src="../img/about_us/achievement/Achievment-4.png" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -236,6 +271,25 @@
         });
 
         document.querySelector('.autofocus').focus()
+
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            slidesPerView: 1,
+            // spaceBetween: 10,
+            breakpoints: {
+                768: {
+                    slidesPerView: 4,
+                    spaceBetween: 20
+                },
+            }
+        });
 
     });
 </script>

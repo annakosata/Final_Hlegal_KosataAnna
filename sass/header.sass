@@ -73,7 +73,7 @@
     align-items: center
     justify-content: center
     @include tt
-    &:focus
+    &:focus, &:active
       background-color: $PinkAccentColor
     &:hover
       background-color: rgba(255,255,255,0.2)
@@ -81,7 +81,7 @@
     color:  $GreyTextColor
     &:hover
       background-color: $GreyBgColor
-    &:focus
+    &:focus, &:active
       color: $WhiteColor
       background-color: $PinkAccentColor
   &__address

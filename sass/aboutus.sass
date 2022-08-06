@@ -5,12 +5,13 @@
     display: flex
     flex-flow: row wrap
     row-gap: 30px
-    padding: 30px 0
+    padding: 30px 0 0
     @media (min-width: 768px)
       row-gap: 60px
       padding: 0
   &__block-wrapper
     padding: 0 30px
+    width: 100%
     @media (min-width: 768px)
       padding: 0 60px
     @media (min-width: 1440px)
@@ -50,6 +51,49 @@
       flex: 0 0 36%
     @media (min-width: 1920px)
       flex: 0 0 29%
+
+  &__achievements
+    background-color: $GreyBgColor
+    width: 100%
+  &__achievements-wrapper
+    width: 100%
+    padding: 30px 60px
+    display: flex
+    flex-flow: column nowrap
+    justify-content: center
+    align-items: center
+    row-gap: 30px
+    @media (min-width: 1920px)
+      padding: 30px 160px
+      max-width: 1920px
+      margin: 0 auto
+    & h3
+      @include h3caps
+      color: $IndigoMainColor
+  &__achievements-container
+    width: 100%
+  &__achievements-slide
+    width: 100%
+    height: 90px!important
+    display: flex
+    background: $WhiteColor
+    border-radius: 12px
+    justify-content: center
+    align-items: center
+    @media (min-width: 1024px)
+      height: 110px!important
+  &__achievements-item
+    max-width: 100%
+    height: 40px
+    @media (min-width: 1024px)
+      height: 60px!important
+    & img
+      width: auto
+      height: 100%
+
+
+
+
   &__banner
     width: 100%
     &-container
@@ -85,6 +129,7 @@
         font: 700 6rem/7.3125rem 'Montserrat'
         left: calc(50% - 478px/2)
         top: calc(50% - 117px/2 + 2.5px)
+
 
 .indicator
   position: relative
